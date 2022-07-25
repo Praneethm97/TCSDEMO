@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="UtilLibraries.Screenshot"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="F:/SwagLabs">
+        <classes>
+            <class name="com.saucedemo.Login">
+                <methods>
+                    <include name="testLogin"/>
+                </methods>
+            </class>
+            <class name="com.saucedemo.AddToCart">
+                <methods>
+                    <include name="addToCart"/>
+                    <include name="cart"/>
+                </methods>
+            </class>
+            <class name="com.saucedemo.CashItemout">
+                <methods>
+                    <include name="cashOut"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
