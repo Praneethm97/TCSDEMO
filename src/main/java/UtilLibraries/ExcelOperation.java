@@ -10,7 +10,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 
 public class ExcelOperation {
-    static String loc = "F:\\SwagLabs\\src\\test\\resource\\Testdata.xlsx";
+    static String loc = "F:\\SwagLabs\\src\\test\\resource\\Data.xlsx";
     public static String getTextValue(String sheetname,int rownumber,int cellnumber) {
         try {
             FileInputStream fis = new FileInputStream(loc);
