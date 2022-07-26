@@ -3,6 +3,7 @@
 <suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <listeners>
     <listener class-name="UtilLibraries.Screenshot"/>
+    <listener class-name="Analyzer.AnnotationTransformer"/>
   </listeners>
   <test thread-count="5" name="F:/SwagLabs(failed)" verbose="0">
     <classes>
@@ -11,6 +12,13 @@
           <include name="cashOut"/>
         </methods>
       </class> <!-- com.saucedemo.CashItemout -->
+      <class name="com.saucedemo.AddToCart">
+        <methods>
+          <include name="cart"/>
+          <include name="startTest"/>
+          <include name="stopTest"/>
+        </methods>
+      </class> <!-- com.saucedemo.AddToCart -->
     </classes>
   </test> <!-- F:/SwagLabs(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->
