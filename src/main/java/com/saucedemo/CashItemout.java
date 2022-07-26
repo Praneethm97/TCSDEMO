@@ -1,9 +1,10 @@
 package com.saucedemo;
 
 import Webpages.CheckoutPage;
+import Webpages.SuperTestScript;
 import org.testng.annotations.Test;
 
-public class CashItemout {
+public class CashItemout extends SuperTestScript {
     @Test
     public void cashOut(){
         CheckoutPage c = new CheckoutPage();
