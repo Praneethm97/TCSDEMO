@@ -7,7 +7,6 @@ public class RetryAnalyzer implements IRetryAnalyzer {
 
     int counter = 0;
     int retryLimit = 3;
-    int status = 0;
     //retry limit defines how many times failed testcase need to be retried
 
     public boolean retry(ITestResult result){
