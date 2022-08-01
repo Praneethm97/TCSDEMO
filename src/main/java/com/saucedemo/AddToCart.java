@@ -4,7 +4,7 @@ import Webpages.*;
 import org.testng.annotations.Test;
 
 public class AddToCart extends SuperTestScript {
-    @Test
+    @Test(priority = 1)
     public void addToCart(){
         Products p = new Products();
         p.filterItems();
@@ -13,7 +13,7 @@ public class AddToCart extends SuperTestScript {
         p.getPrice();
         p.addItemToCart();
     }
-    @Test
+    @Test(priority = 1)
     public void cart(){
         Cart c = new Cart();
         c.getNoOfItemsInCart();
