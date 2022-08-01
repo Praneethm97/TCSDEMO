@@ -4,7 +4,7 @@ import Webpages.*;
 import org.testng.annotations.Test;
 
 public class Login extends SuperTestScript {
-    @Test
+    @Test(priority = 1)
     public void testLogin(){
         LoginPage lp = new LoginPage();
         lp.enterUsername("standard_user");

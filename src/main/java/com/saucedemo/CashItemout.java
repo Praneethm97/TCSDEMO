@@ -5,7 +5,7 @@ import Webpages.SuperTestScript;
 import org.testng.annotations.Test;
 
 public class CashItemout extends SuperTestScript {
-    @Test
+    @Test(priority=1)
     public void cashOut(){
         CheckoutPage c = new CheckoutPage();
         c.enterFirstName("Jacob");
